@@ -21,10 +21,9 @@ const categories = [
         icon: <PeopleIcon />,
         active: true,
       },
-
     ],
   },
- 
+
 ];
 
 const item = {

@@ -13,21 +13,21 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from './AddressForm';
-import PaymentForm from './PaymentForm';
-import Review from './Review';
+import ProprietarioForm from './ProprietarioForm';
+import ImovelForm from './ImovelForm';
 
 
 
-const steps = ['Informações do projeto', 'Informações do cliente', 'Review seu projeto'];
+const steps = ['Informações do proprietário', 'Informações do imóvel', 'Informações do projeto'];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <AddressForm />;
+      return <ProprietarioForm />;
     case 1:
-      return <PaymentForm />;
+      return <ImovelForm />;
     case 2:
-      return <Review />;
+      return <AddressForm />;
     default:
       throw new Error('Unknown step');
   }

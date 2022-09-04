@@ -10,7 +10,7 @@ import dayjs from 'dayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 export default function AddressForm() {
-      const [value, setValue] = React.useState(dayjs());
+  const [value, setValue] = React.useState(dayjs());
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
@@ -51,32 +51,32 @@ export default function AddressForm() {
           />
         </Grid>
         <Grid item xs={12}>
-            <FormControl>
+          <FormControl>
             <FormLabel id="demo-radio-buttons-group-label">Tipo de crédito</FormLabel>
             <RadioGroup
-                aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue="female"
-                name="radio-buttons-group"
+              aria-labelledby="demo-radio-buttons-group-label"
+              defaultValue="female"
+              name="radio-buttons-group"
             >
-                <FormControlLabel value="female" control={<Radio />} label="Unidade de carbono florestal - UCF" />
-                <FormControlLabel value="male" control={<Radio />} label="Unidade de crédito de recursos hidricos -
+              <FormControlLabel value="female" control={<Radio />} label="Unidade de carbono florestal - UCF" />
+              <FormControlLabel value="male" control={<Radio />} label="Unidade de crédito de recursos hidricos -
             UCRH" />
-                <FormControlLabel value="other" control={<Radio />} label="Unidade de crédito de biodiversidade -
+              <FormControlLabel value="other" control={<Radio />} label="Unidade de crédito de biodiversidade -
             UCBIO" />
             </RadioGroup>
-            </FormControl>
+          </FormControl>
         </Grid>
         <Grid item xs={12} sm={6}>
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-       <MobileDatePicker
-          label="Data de Registro"
-          value={value}
-          onChange={(newValue) => {
-            setValue(newValue);
-          }}
-          renderInput={(params) => <TextField {...params} />}
-        />
-        </LocalizationProvider>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <MobileDatePicker
+              label="Data de Registro"
+              value={value}
+              onChange={(newValue) => {
+                setValue(newValue);
+              }}
+              renderInput={(params) => <TextField {...params} />}
+            />
+          </LocalizationProvider>
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
@@ -123,20 +123,20 @@ export default function AddressForm() {
         </Grid>
 
         <Grid item xs={12} sm={6}>
-            <Typography gutterBottom>
-                Área do projeto em .KML
-            </Typography>
-            <Button variant="contained" component="label">
+          <Typography gutterBottom>
+            Área do projeto em .KML
+          </Typography>
+          <Button variant="contained" component="label">
             Upload
             <input hidden accept="image/*" multiple type="file" />
-            </Button>
+          </Button>
         </Grid>
 
         <Grid item xs={12}>
           <TextField
             required
-             multiline
-          maxRows={4}
+            multiline
+            maxRows={4}
             id="country"
             name="country"
             label="Descrição do projeto"

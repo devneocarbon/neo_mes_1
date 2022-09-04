@@ -15,6 +15,8 @@ import Checkout from './Checkout';
 
 
 
+
+
 export default function Content() {
 
   const style = {
@@ -30,6 +32,8 @@ export default function Content() {
     const handleClose = () => setOpen(false);
 
   return (
+
+    <div>
     <Paper sx={{ maxWidth: 936, margin: 'auto', overflow: 'hidden' }}>
       <AppBar
         position="static"
@@ -64,7 +68,7 @@ export default function Content() {
                   aria-labelledby="modal-modal-title"
                   aria-describedby="modal-modal-description"
                 >
-                  <Checkout/> 
+                  <Checkout/>
                 </Modal>
               </Button>
               <Tooltip title="Reload">
@@ -80,5 +84,8 @@ export default function Content() {
         Ainda não há projetos para mostrar
       </Typography>
     </Paper>
+
+
+    </div>
   );
 }
