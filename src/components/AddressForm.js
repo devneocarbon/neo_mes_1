@@ -146,6 +146,87 @@ export default function AddressForm() {
           />
         </Grid>
 
+
+        <Grid item xs={12}>
+          <FormControl>
+            <RadioGroup
+              aria-labelledby="demo-radio-buttons-group-label"
+              defaultValue="female"
+              name="radio-buttons-group"
+            >
+              <FormControlLabel value="female" control={<Radio />} label="10 Anos Fixo" />
+              <FormControlLabel value="male" control={<Radio />} label="10 Anos Renovável" />
+
+            </RadioGroup>
+          </FormControl>
+        </Grid>
+
+
+        <Grid item xs={12} sm={6}>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <MobileDatePicker
+              label="Início da Validade"
+              value={value}
+              onChange={(newValue) => {
+                setValue(newValue);
+              }}
+              renderInput={(params) => <TextField {...params} />}
+            />
+          </LocalizationProvider>
+        </Grid>
+
+         <Grid item xs={12} sm={6}>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <MobileDatePicker
+              label="Final da Validade"
+              value={value}
+              onChange={(newValue) => {
+                setValue(newValue);
+              }}
+              renderInput={(params) => <TextField {...params} />}
+            />
+          </LocalizationProvider>
+        </Grid>     
+
+        <Grid item xs={12} sm={6}>
+          <TextField
+            id="state"
+            name="state"
+            label="Nome do VVB"
+            fullWidth
+            variant="standard"
+          />
+        </Grid>
+
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            Declaração RINA
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>     
+
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            Relatório de verificação da quantificação do produto da propriedade
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>
+
+
+   
+
+
+
+
+
+
+
       </Grid>
     </React.Fragment>
   );
