@@ -18,7 +18,7 @@ import ImovelForm from './ImovelForm';
 
 
 
-const steps = ['Informações do proprietário', 'Informações do imóvel', 'Informações do projeto'];
+const steps = ['Informações do proprietário', 'Informações do imóvel', 'Informações do projeto','Informações do projeto'];
 
 function getStepContent(step) {
   switch (step) {
@@ -28,6 +28,8 @@ function getStepContent(step) {
       return <ImovelForm />;
     case 2:
       return <AddressForm />;
+    case 3:
+      return <AddressForm />;      
     default:
       throw new Error('Unknown step');
   }
