@@ -11,22 +11,75 @@ export default function ProprietarioForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Dados
+        Documentos do imóvel
       </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="cardName"
-            label="nome"
-            fullWidth
-            autoComplete="cc-name"
-            variant="standard"
-          />
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            Matrícula
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography gutterBottom>
-            Documento legal do imóvel
+            CAR
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            CCIR
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            CERTIFICADO SIGEF
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            ITR
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            Certidão negativa do Estado, Município e Federal
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            Planta topográfica
+          </Typography>
+          <Button variant="contained" component="label">
+            Upload
+            <input hidden accept="image/*" multiple type="file" />
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography gutterBottom>
+            Art do responsável pela planta
           </Typography>
           <Button variant="contained" component="label">
             Upload

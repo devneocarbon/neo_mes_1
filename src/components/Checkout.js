@@ -18,7 +18,7 @@ import ImovelForm from './ImovelForm';
 import TipoProduto from './TipoProduto'
 
 
-const steps = ['Informações do proprietário', 'Informações do imóvel', 'Informações do projeto','Tipo de projeto'];
+const steps = ['Informações do proprietário', 'Informações do imóvel', 'Informações do projeto','Tipo de produto'];
 
 function getStepContent(step) {
   switch (step) {
@@ -29,7 +29,7 @@ function getStepContent(step) {
     case 2:
       return <AddressForm />;
     case 3:
-      return <TipoProduto />;      
+      return <TipoProduto />;
     default:
       throw new Error('Unknown step');
   }
