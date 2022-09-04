@@ -15,10 +15,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from './AddressForm';
 import ProprietarioForm from './ProprietarioForm';
 import ImovelForm from './ImovelForm';
+import TipoProduto from './TipoProduto'
 
 
-
-const steps = ['Informações do proprietário', 'Informações do imóvel', 'Informações do projeto','Informações do projeto'];
+const steps = ['Informações do proprietário', 'Informações do imóvel', 'Informações do projeto','Tipo de projeto'];
 
 function getStepContent(step) {
   switch (step) {
@@ -29,7 +29,7 @@ function getStepContent(step) {
     case 2:
       return <AddressForm />;
     case 3:
-      return <AddressForm />;      
+      return <TipoProduto />;      
     default:
       throw new Error('Unknown step');
   }
