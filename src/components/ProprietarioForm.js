@@ -30,21 +30,21 @@ export default function ProprietarioForm() {
           </Typography>
           <Button variant="contained" component="label">
             Upload
-            <input hidden accept="image/*" multiple type="file" />
+            <input hidden accept=".pdf" multiple type="file" />
           </Button>
           <Typography gutterBottom>
             Documento legal do arrendatário
           </Typography>
           <Button variant="contained" component="label">
             Upload
-            <input hidden accept="image/*" multiple type="file" />
+            <input hidden accept=".pdf" multiple type="file" />
           </Button>
           <Typography gutterBottom>
             Procuração para representação
           </Typography>
           <Button variant="contained" component="label">
             Upload
-            <input hidden accept="image/*" multiple type="file" />
+            <input hidden accept=".pdf" multiple type="file" />
           </Button>
         </Grid>
       </Grid>

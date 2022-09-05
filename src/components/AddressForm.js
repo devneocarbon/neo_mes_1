@@ -128,7 +128,7 @@ export default function AddressForm() {
           </Typography>
           <Button variant="contained" component="label">
             Upload
-            <input hidden accept="image/*" multiple type="file" />
+            <input hidden accept=".kml" multiple type="file" />
           </Button>
         </Grid>
 
@@ -204,7 +204,7 @@ export default function AddressForm() {
           </Typography>
           <Button variant="contained" component="label">
             Upload
-            <input hidden accept="image/*" multiple type="file" />
+            <input hidden accept=".pdf" multiple type="file" />
           </Button>
         </Grid>     
 
@@ -214,7 +214,7 @@ export default function AddressForm() {
           </Typography>
           <Button variant="contained" component="label">
             Upload
-            <input hidden accept="image/*" multiple type="file" />
+            <input hidden accept=".pdf" multiple type="file" />
           </Button>
         </Grid>
 
